@@ -1,6 +1,11 @@
 package fr.program.tutomod;
 
 import com.mojang.logging.LogUtils;
+import fr.program.tutomod.block.ModBlocks;
+import fr.program.tutomod.item.ModCreativeTabs;
+import fr.program.tutomod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +30,10 @@ public class TutoMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus); // Register for items from this mod
+        ModCreativeTabs.register(modEventBus); // Register for custom tabs
+        ModBlocks.register(modEventBus); // Register for blocks from this mod
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -33,13 +42,17 @@ public class TutoMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        LOGGER.info("HELLO FROM COMMON SETUP");
-        LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
-    }
 
+    }
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        /*
+        Add items to creative tab
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RAW_SAPPHIRE); // Add Raw Sapphire item to ingredients tab
+            event.accept(ModItems.SAPPHIRE);
+        }
+        */
     }
 
     @SubscribeEvent
