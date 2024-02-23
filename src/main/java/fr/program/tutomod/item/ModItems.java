@@ -32,4 +32,9 @@ public class ModItems {
             () -> new MetalDetectorItem(
                     new Item.Properties()
             ));
+
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(
+                    new Item.Properties().food(ModFoods.STRAWBERRY)
+            ));
 }

@@ -29,10 +29,12 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.STRAWBERRY.get());
                         // We can add other items : pOutput.accept(Items.DIAMOND);
 
 
                         // Accepting blocks from the mod
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
