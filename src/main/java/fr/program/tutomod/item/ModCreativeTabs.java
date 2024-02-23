@@ -28,6 +28,7 @@ public class ModCreativeTabs {
                         // Accepting items from the mod
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
                         // We can add other items : pOutput.accept(Items.DIAMOND);
 
 
