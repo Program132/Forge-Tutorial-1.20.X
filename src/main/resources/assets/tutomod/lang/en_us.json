@@ -14,5 +14,7 @@
   "block.tutomod.sapphire_ore": "Sapphire Ore",
   "block.tutomod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "block.tutomod.nether_sapphire_ore": "Nether Sapphire Ore",
-  "block.tutomod.end_stone_sapphire_ore": "End Stone Sapphire Ore"
+  "block.tutomod.end_stone_sapphire_ore": "End Stone Sapphire Ore",
+
+  "block.tutomod.sound_block": "Sound Block"
 }
