@@ -30,6 +30,7 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.STRAWBERRY.get());
+                        pOutput.accept(ModItems.BIG_COAL.get());
                         // We can add other items : pOutput.accept(Items.DIAMOND);
 
 

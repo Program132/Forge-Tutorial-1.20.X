@@ -1,6 +1,7 @@
 package fr.program.tutomod.item;
 
 import fr.program.tutomod.TutoMod;
+import fr.program.tutomod.item.custom.FuelItem;
 import fr.program.tutomod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,5 +37,10 @@ public class ModItems {
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(
                     new Item.Properties().food(ModFoods.STRAWBERRY)
+            ));
+
+    public static final RegistryObject<Item> BIG_COAL = ITEMS.register("big_coal",
+            () -> new FuelItem(
+                    new Item.Properties(), 800
             ));
 }
