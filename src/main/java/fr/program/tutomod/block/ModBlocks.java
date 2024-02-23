@@ -1,6 +1,7 @@
 package fr.program.tutomod.block;
 
 import fr.program.tutomod.TutoMod;
+import fr.program.tutomod.block.custom.SoundBlock;
 import fr.program.tutomod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -45,6 +46,11 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties
                     .copy(Blocks.IRON_BLOCK)
                     .sound(SoundType.ANVIL)
+            ));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties
+                    .copy(Blocks.IRON_BLOCK)
             ));
 
 
