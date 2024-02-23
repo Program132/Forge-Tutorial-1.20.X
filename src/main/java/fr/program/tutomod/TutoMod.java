@@ -40,12 +40,10 @@ public class TutoMod
         modEventBus.addListener(this::addCreative);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
+    private void commonSetup(final FMLCommonSetupEvent event)  {
 
     }
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
+    private void addCreative(BuildCreativeModeTabContentsEvent event)  {
         /*
         Add items to creative tab
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
@@ -56,14 +54,12 @@ public class TutoMod
     }
 
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
+    public void onServerStarting(ServerStartingEvent event)  {
 
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents  {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
