@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tutomod:block/end_stone_sapphire_ore"
+  }
+}
