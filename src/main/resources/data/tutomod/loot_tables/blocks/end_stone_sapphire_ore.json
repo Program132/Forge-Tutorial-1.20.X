@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "tutomod:end_stone_nether_sapphire_ore"
+              "name": "tutomod:end_stone_sapphire_ore"
             },
             {
               "type": "minecraft:item",
@@ -55,5 +55,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "tutomod:blocks/end_stone_nether_sapphire_ore"
+  "random_sequence": "tutomod:blocks/end_stone_sapphire_ore"
 }
