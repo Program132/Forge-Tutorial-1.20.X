@@ -51,7 +51,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties
                     .copy(Blocks.IRON_BLOCK)
+
             ));
+
+    /*
+    If you don't want to have a loot, add .noLootTable() :
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties
+                    .copy(Blocks.IRON_BLOCK)
+                    .noLootTable()
+            ));
+    * */
 
 
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
