@@ -7,6 +7,11 @@
   "item.tutomod.strawberry": "Strawberry",
   "item.tutomod.big_coal": "Big Coal",
   "item.tutomod.big_apple": "Big Apple",
+  "item.tutomod.sapphire_sword": "Sapphire Sword",
+  "item.tutomod.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.tutomod.sapphire_axe": "Sapphire Axe",
+  "item.tutomod.sapphire_shovel": "Sapphire Shovel",
+  "item.tutomod.sapphire_hoe": "Sapphire Hoe",
 
   "block.tutomod.sapphire_block": "Block of Sapphire",
   "block.tutomod.raw_sapphire_block": "Block of Raw Sapphire",
