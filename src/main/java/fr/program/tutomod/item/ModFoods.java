@@ -11,4 +11,11 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 200), 0.1f)
             .fast()
             .build();
+
+    public static final FoodProperties BIG_APPLE = new FoodProperties.Builder()
+            .nutrition(6)
+            .saturationMod(0.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 300), 0.1f)
+            .fast()
+            .build();
 }

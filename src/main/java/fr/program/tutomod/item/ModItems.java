@@ -43,4 +43,9 @@ public class ModItems {
             () -> new FuelItem(
                     new Item.Properties(), 800
             ));
+
+    public static final RegistryObject<Item> BIG_APPLE = ITEMS.register("big_apple",
+            () -> new Item(
+                    new Item.Properties().food(ModFoods.BIG_APPLE)
+            ));
 }

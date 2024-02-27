@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "tutomod:item/big_apple_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "tutomod:item/big_apple_2d"
+    },
+    "ground": {
+      "parent": "tutomod:item/big_apple_2d"
+    },
+    "fixed": {
+      "parent": "tutomod:item/big_apple_2d"
+    }
+  }
+}

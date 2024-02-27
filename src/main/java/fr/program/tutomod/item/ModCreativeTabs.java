@@ -30,6 +30,7 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.STRAWBERRY.get());
                         pOutput.accept(ModItems.BIG_COAL.get());
+                        pOutput.accept(ModItems.BIG_APPLE.get());
 
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
