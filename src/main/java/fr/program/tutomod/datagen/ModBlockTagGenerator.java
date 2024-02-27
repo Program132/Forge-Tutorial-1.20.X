@@ -2,10 +2,12 @@ package fr.program.tutomod.datagen;
 
 import fr.program.tutomod.TutoMod;
 import fr.program.tutomod.block.ModBlocks;
+import fr.program.tutomod.item.ModItems;
 import fr.program.tutomod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -38,10 +40,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
-
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.SOUND_BLOCK.get());
         this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
                 .add(ModBlocks.SOUND_BLOCK.get());
-
 
         // For the connection between blocks :
         this.tag(BlockTags.FENCES)
