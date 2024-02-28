@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import fr.program.tutomod.block.ModBlocks;
 import fr.program.tutomod.item.ModCreativeTabs;
 import fr.program.tutomod.item.ModItems;
+import fr.program.tutomod.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -33,6 +34,9 @@ public class TutoMod
         ModItems.register(modEventBus); // Register for items from this mod
         ModCreativeTabs.register(modEventBus); // Register for custom tabs
         ModBlocks.register(modEventBus); // Register for blocks from this mod
+
+        ModLootModifiers.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
