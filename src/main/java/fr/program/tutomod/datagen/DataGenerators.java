@@ -1,7 +1,6 @@
 package fr.program.tutomod.datagen;
 
 import fr.program.tutomod.TutoMod;
-import fr.program.tutomod.datagen.loot.ModGlobalLootModifiersProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

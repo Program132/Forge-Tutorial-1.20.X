@@ -1,8 +1,9 @@
-package fr.program.tutomod.datagen.loot;
+package fr.program.tutomod.datagen;
 
 import fr.program.tutomod.TutoMod;
 import fr.program.tutomod.item.ModItems;
 import fr.program.tutomod.loot.AddItemModifier;
+import fr.program.tutomod.loot.AddSusSandItemModifier;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -31,6 +32,12 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 new LootTableIdCondition.Builder(new ResourceLocation("entities/zombie")).build()
         },
                 ModItems.SAPPHIRE.get()
+        ));
+
+        add("metal_detector_from_sus_sand", new AddSusSandItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("archaeology/desert_pyramid")).build()
+        },
+                ModItems.METAL_DETECTOR.get()
         ));
     }
 }
