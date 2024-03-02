@@ -42,6 +42,9 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());
                         pOutput.accept(ModItems.SAPPHIRE_BOOTS.get());
 
+                        pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
+
+
 
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());

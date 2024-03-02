@@ -2,6 +2,7 @@ package fr.program.tutomod.block;
 
 import fr.program.tutomod.TutoMod;
 import fr.program.tutomod.block.custom.SoundBlock;
+import fr.program.tutomod.block.custom.StrawberryCropBlock;
 import fr.program.tutomod.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -130,5 +131,14 @@ public class ModBlocks {
                     .copy(Blocks.IRON_BLOCK)
                     .noCollission(),
                     BlockSetType.IRON
+            ));
+
+
+
+    public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
+            () -> new StrawberryCropBlock(BlockBehaviour.Properties
+                    .copy(Blocks.WHEAT)
+                    .noOcclusion()
+                    .noCollission()
             ));
 }

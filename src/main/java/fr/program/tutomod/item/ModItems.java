@@ -1,6 +1,7 @@
 package fr.program.tutomod.item;
 
 import fr.program.tutomod.TutoMod;
+import fr.program.tutomod.block.ModBlocks;
 import fr.program.tutomod.item.custom.FuelItem;
 import fr.program.tutomod.item.custom.MetalDetectorItem;
 import fr.program.tutomod.item.custom.ModArmorItem;
@@ -89,6 +90,12 @@ public class ModItems {
             ));
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ModArmorItem(ModelArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS,
+                    new Item.Properties()
+            ));
+
+
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(),
                     new Item.Properties()
             ));
 }
