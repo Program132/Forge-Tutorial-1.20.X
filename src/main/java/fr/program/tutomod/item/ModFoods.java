@@ -18,4 +18,10 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 300), 0.1f)
             .fast()
             .build();
+
+    public static final FoodProperties CORN = new FoodProperties.Builder()
+            .nutrition(1)
+            .saturationMod(0.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 300), 0.01f)
+            .build();
 }
